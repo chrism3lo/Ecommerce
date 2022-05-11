@@ -6,6 +6,12 @@
 #home-body{
   height: 100vh;
   display: flex;
+  flex-direction: column;
+}
+#contact-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /* NavBar Code */
 
@@ -14,9 +20,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   width: 100vw;
-  position: fixed;
   background-color: black;
-  top: 0;
 }
 
 nav ul{
@@ -45,6 +49,12 @@ li a:hover {
   transition: 0.1s;
 }
 
+.sticky {
+	position: -webkit-sticky;
+	position: fixed;
+	top: 0;
+}
+
 /* NavBar Code */
 
 
@@ -52,7 +62,7 @@ li a:hover {
 
 .Home-Hero{
   background-image: url(Images/Sneaker.webp);
-  background-size: stretch;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   height: 50vh;
@@ -63,8 +73,9 @@ li a:hover {
 }
 #Home-Content{
   display: flex;
-  justify-content: center;
-  z-index: 0;
+  justify-content: space-around;
+  z-index: 1;
+  padding-top: 1000px;
 }
 
 
@@ -108,7 +119,44 @@ li a:hover {
 /* Products Page */
 
 
+/* Contact page */
 
+input[type=text], select, textarea {
+  width: 30%;
+  padding: 12px; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+
+input[type=submit]{
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 5%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  justify-content: center;
+  border-radius: 5px;
+  background-image: url(Images/streetwear.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px;
+}
+
+/* Contact page */
 
 /* Footer Code */
 
@@ -146,3 +194,19 @@ footer a{
 }
 
 /* Footer Code */
+
+/* Media Query responsive */
+
+@media (max-width: 800px){
+
+
+
+
+}
+
+@media (max-width: 400px){
+ 
+
+
+  
+}

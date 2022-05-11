@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Melo Soles | Ecommerce Website</title>
 </head>
-<body>
+<body id="contact-body">
     <header>
-        <nav>
+        <nav class ="sticky">
             <div class = "logo">
                 <a href="home.html"><img src = "Images/MSLogo.png" alt="Melo Soles Logo"></a>
             </div>            
@@ -21,16 +22,19 @@
         </nav>
     </header>
 
-    <section id="contact-hero">
+    <section>
 
+        <div class="container">
+            <form>
+                <input type="text" placeholder="First name.." required="required">
+                <input type="text" placeholder="Last name.." required="required">
+                <input type="text" placeholder="Email.." required="required">      
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+      
     </section>
-
-
-
-
-
-
-
 
     <footer>
         <img src="Images/MC.png" alt ="Melo Creations Logo"> 
