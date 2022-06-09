@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+#home-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+#contact-body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* NavBar Code */
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: black;
+}
+
+nav ul{
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+
+}
+.logo img{
+  justify-content: flex-start;
+  height: 100px;
+  border-radius: 50%;
+}
+nav li{
+  list-style-type: none;
+  color: white;
+  padding: 10px 40px 10px 40px;
+}
+nav a{
+  text-decoration: none;
+  color: inherit;
+  font-size:larger;
+}
+li a:hover {
+  border-bottom: 4px solid white;
+  transition: 0.1s;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: fixed;
+	top: 0;
+}
+
+/* NavBar Code */
+
+
+/* Home Page */
+
+.Home-Hero{
+  background-image: url(Images/Sneaker.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  padding-top: 250px;
+}
+#Home-Content{
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+  padding-top: 1000px;
+}
+
+
+/* Home Page */
+
+
+
+
+
+
+
+/* Products Page Code */
+
+
+
+.Row{
+  padding-top: 150px;;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 250px;
+  height: 450px;
+  
+}
+.card img{
+  width: 250px;
+  border-bottom: 1px solid black;  
+}
+
+.products{
+  padding-bottom: 150px;
+}
+
+/* Products Page */
+
+
+/* Contact page */
+
+input[type=text], textarea {
+  width: 30%;
+  padding: 12px; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+}
+
+input[type=submit]{
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 10%;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  justify-content: center;
+  border-radius: 5px;
+  background-image: url(Images/streetwear.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px;
+}
+
+/* Contact page */
+
+/* Footer Code */
+
+footer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  width: 100vw;
+  margin-top: auto;
+}
+footer ul{
+  display: flex;
+  justify-content: space-around;
+  font-size: 25px;
+}
+footer li{
+  list-style-type: none;
+  padding-right: 20px;
+
+}
+footer img{
+  height: 60px;
+}
+footer a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ footer a:hover {
+  border-bottom: 4px solid white;
+  transition: 0.1s;
+}
+
+/* Footer Code */
+
+/* Media Query responsive */
+
+@media (max-width: 800px){
+
+  .card{
+
+    width: 120px;
+    height: 350px;
+    overflow: hidden;
+    
+  }
+  .card img{
+    width: 120px;
+    border-bottom: 1px solid black;  
+  }
+
+  input[type=type], textarea{
+    width: 70%;
+  }
+
+  input[type=submit]{
+    width: 20%;
+  }
+
+
+}
